@@ -1,0 +1,29 @@
+{
+	"root": true,
+	"extends": ["@react-native-community", "eslint-config-prettier"],
+	"plugins": ["import", "typescript-eslint"],
+	"rules": {
+		"prettier/prettier": ["warn", {}, { "usePrettierrc": true }],
+		"quotes": ["error", { "double": true }],
+
+		"import/no-unresolved": "warn"
+	},
+	"parserOptions": {
+		"project": "tsconfig.json",
+		"sourceType": "module",
+		"ecmaVersion": 2020
+	},
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"]
+		},
+		"import/resolver": {
+			"typescript": {
+				"allwaysTryTypes": true
+			},
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	}
+}

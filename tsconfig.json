@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"baseUrl": ".",
+		"paths": {
+			"@app/movie/*": ["src/movie/*"],
+			"@app/home/*": ["src/home/*"]
+		}
+	},
+	"include": ["**/*.ts", "**/*.tsx"],
+	"extends": "expo/tsconfig.base"
+}
